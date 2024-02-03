@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./site/",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "lib": ["es6", "dom", "es2017"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "allowJs": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "strictNullChecks": true
+  },
+  "include": [
+    "src/docs",
+    "../ballet/src",
+    "src/spec-examples-generator",
+    "src/generated"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
