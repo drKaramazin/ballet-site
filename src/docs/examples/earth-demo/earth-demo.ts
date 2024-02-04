@@ -49,6 +49,8 @@ class AngleMotion extends FramedMotion {
     this.setAngle(this.start(Util.clientWidth(), Util.clientHeight()) + length * params.delta);
   }
 
+  turnOff(element: HTMLElement): void {}
+
 }
 
 const earth = new RefActor(document.getElementById('earth')!);
