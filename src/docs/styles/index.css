@@ -32,6 +32,10 @@
     background: #86B7D1;
 }
 
+.multiscene-scene {
+    background: #D1868B;
+}
+
 .agenda {
     display: flex;
     align-items: center;

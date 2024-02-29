@@ -1,0 +1,43 @@
+.scene {
+    border: solid 1px #fff;
+}
+
+#scene1 {
+    background: #7C7367;
+}
+
+#scene2 {
+    background: #364852;
+}
+
+#scene3 {
+    background: #67757C;
+}
+
+#box1 {
+    width: 30px;
+    height: 30px;
+    background: #A4D186;
+}
+
+#box2 {
+    width: 30px;
+    height: 30px;
+    background: #CE86D1;
+}
+
+#box3-1 {
+    width: 30px;
+    height: 30px;
+    background: #86B7D1;
+}
+
+#box3-2 {
+    width: 30px;
+    height: 30px;
+    background: #D1CF86;
+}
+
+.driving {
+    height: 80vh;
+}
