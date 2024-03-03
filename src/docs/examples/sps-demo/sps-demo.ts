@@ -2,12 +2,12 @@ import { Value, ballet, timeFrame } from "ballet";
 
 const sceneHeight: Value = (w, h) => h * 2;
 
-const blockWidth: Value = (w, h) => w/4;
+const blockWidth: Value = (w) => w/4;
 const blockHeight: Value = (w, h) => h/8;
 
 const firstHalfBlockX: Value = (w, h) => w/4 - blockWidth(w, h)/2;
 const secondHalfStartBlockX: Value = (w, h) => w/4 * 3 - blockWidth(w, h)/2;
-const secondHalfEndBlockX: Value = (w, h) => w/2;
+const secondHalfEndBlockX: Value = (w) => w/2;
 const firstHalfBlockY: Value = (w, h) => h/8 - blockHeight(w, h)/2;
 const secondHalfBlockY: Value = (w, h) => h/8 * 3 - blockHeight(w, h)/2;
 
@@ -15,16 +15,16 @@ const endBlockWidth: Value = (w, h) => w/2 - firstHalfBlockX(w, h);
 
 const hideBlockFrame = timeFrame({
   opacity: {
-    start: () => 1,
-    end: () => 0,
+    start: 1,
+    end: 0,
   },
-  start: () => 0,
+  start: 0,
   end: (w, h) => h/2,
 });
 
-const agendaStartWidth: Value = (w, h) => w/4;
+const agendaStartWidth: Value = (w) => w/4;
 const agendaStartHeight: Value = (w, h) => h/4;
-const agendaEndWidth: Value = (w, h) => w/2;
+const agendaEndWidth: Value = (w) => w/2;
 const agendaEndHeight: Value = (w, h) => h/2;
 
 ballet({
@@ -47,7 +47,7 @@ ballet({
             endWidth: endBlockWidth,
             endHeight: blockHeight,
           },
-          start: () => 0,
+          start: 0,
           end: (w, h) => h/2,
         },
         ...hideBlockFrame,
@@ -69,7 +69,7 @@ ballet({
             endWidth: endBlockWidth,
             endHeight: blockHeight,
           },
-          start: () => 0,
+          start: 0,
           end: (w, h) => h/2,
         },
         ...hideBlockFrame,
@@ -91,7 +91,7 @@ ballet({
             endWidth: endBlockWidth,
             endHeight: blockHeight,
           },
-          start: () => 0,
+          start: 0,
           end: (w, h) => h/2,
         },
         ...hideBlockFrame,
@@ -113,7 +113,7 @@ ballet({
             endWidth: endBlockWidth,
             endHeight: blockHeight,
           },
-          start: () => 0,
+          start: 0,
           end: (w, h) => h/2,
         },
         ...hideBlockFrame,
@@ -135,10 +135,10 @@ ballet({
           endHeight: agendaEndHeight,
         },
         opacity: {
-          start: () => 0,
-          end: () => 1,
+          start: 0,
+          end: 1,
         },
-        start: () => 0,
+        start: 0,
         end: (w, h) => h/2,
       }],
     },
