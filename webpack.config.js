@@ -35,6 +35,11 @@ const pages = [
     template: 'examples/fas-offset-demo/fas-offset-demo.html',
     ts: 'examples/fas-offset-demo/fas-offset-demo.ts',
   },
+  {
+    name: 'multiscene',
+    template: 'examples/multiscene/multiscene.html',
+    ts: 'examples/multiscene/multiscene.ts'
+  }
 ];
 
 const specsPath = path.resolve(__dirname, 'src', 'generated', 'spec-wrappers');
