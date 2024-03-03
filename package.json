@@ -1,6 +1,6 @@
 {
   "name": "ballet-site",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "description": "The ballet website",
   "main": "index.js",
@@ -40,6 +40,6 @@
   },
   "dependencies": {
     "ballet": "0.0.4",
-    "ballet-colors": "0.0.3"
+    "ballet-colors": "0.0.4"
   }
 }
