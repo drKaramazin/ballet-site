@@ -39,7 +39,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "ballet": "0.0.3",
+    "ballet": "0.0.4",
     "ballet-colors": "0.0.3"
   }
 }
