@@ -1,18 +1,14 @@
 {
   "name": "ballet-site",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": false,
   "description": "The ballet website",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run serve",
-    "serve": "webpack serve --mode development --env lib-path='..'",
-    "build:dev": "webpack --mode development --stats-error-details --env lib-path='..'",
-    "build": "webpack --mode production --env lib-path='..'",
-    "deploy": "webpack --mode production --env lib-path='.'",
-    "generate:spec-examples": "npx ts-node-esm -P src/spec-examples-generator/tsconfig.spec.examples.json src/spec-examples-generator/generate-spec-examples.ts",
-    "tsc": "tsc"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "website",
@@ -22,24 +18,34 @@
   "license": "MIT",
   "devDependencies": {
     "@types/jasmine": "^4.0.2",
-    "@types/node": "^18.11.18",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
     "colors": "^1.4.0",
     "copy-webpack-plugin": "^11.0.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.1",
     "glob": "^8.1.0",
     "html-webpack-plugin": "^5.5.0",
     "jasmine-core": "^4.5.0",
     "mustache": "^4.2.0",
     "mustache-loader": "^1.4.3",
+    "postcss": "^8",
     "sanitize-filename-truncate": "^1.0.2",
+    "tailwindcss": "^3.3.0",
     "ts-loader": "^9.2.7",
     "ts-node": "^10.9.1",
-    "typescript": "^4.8.4",
+    "typescript": "^5",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
     "ballet": "0.0.4",
-    "ballet-colors": "0.0.4"
+    "ballet-colors": "0.0.4",
+    "next": "14.1.1",
+    "react": "^18",
+    "react-dom": "^18"
   }
 }
