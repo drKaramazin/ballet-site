@@ -7,7 +7,7 @@ export interface ExampleHelper {
   css: string;
 }
 
-export type Example = 'multiscene';
+export type Example = 'multiscene' | 'move-motion' | 'size-motion' | 'opacity-motion';
 
 function readExampleFile(examplePath: string): Promise<string> {
   return fs.readFileSync(path.resolve(process.cwd(), `src/app/examples/${examplePath}`), { encoding: 'utf-8' });

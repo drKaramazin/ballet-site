@@ -1,0 +1,14 @@
+body {
+    height: 200vh;
+    background: #67757C;
+}
+
+#scene {
+    background: #364852;
+}
+
+#box {
+    width: 30px;
+    height: 30px;
+    background: #A4D186;
+}
